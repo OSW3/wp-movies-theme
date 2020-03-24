@@ -37,11 +37,13 @@
         </div>
 
         <div class="footer-copyright">
-            &copy; <?= date("Y") ?> xxxxxTitreDuSite
+            &copy; <?= date("Y") ?> <?= bloginfo('name') ?>
         </div>
 
     </div>
 </footer><!-- End #main-footer -->
+
+<?php wp_footer() ?>
 
 </body>
 </html>

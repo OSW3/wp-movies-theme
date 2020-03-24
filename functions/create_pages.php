@@ -2,6 +2,11 @@
 
 function create_pages() {
 
+    // Création des pages
+    // - Accueil
+    // - Contact
+    // - Mentions Legal
+
     $page_title = "Accueil";
 
     // Check if page exists

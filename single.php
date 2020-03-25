@@ -13,5 +13,14 @@ the_post();
         <?php the_content() ?>
     </div>
 
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>Director</td>
+                <td><?= get_post_meta( get_the_ID(), 'director', true ) ?></td>
+            </tr>
+        </tbody>
+    </table>
+
 </div>
 <?php get_footer() ?>

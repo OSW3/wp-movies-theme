@@ -6,7 +6,6 @@ function create_post_movie()
     $post_type = "movie"; // post, page, revision, media
     $post_label = "Mes films";
 
-
     $labels = [
         'name'                  => $post_label,
         'singular_name'         => "Film",

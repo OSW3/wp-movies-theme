@@ -16,6 +16,8 @@
                 <div class="col-3">
                     <h4>About Us</h4>
                     <!-- Description de notre entreprise -->
+                    <!-- <?= do_shortcode('[about_shortcode class="test" truc="bidule"]') ?> -->
+                    <?= do_shortcode('[about_shortcode]Ceci est le contenu du shortcode !![/about_shortcode]') ?>
                 </div>
 
                 <div class="col-3">
@@ -29,8 +31,9 @@
                 </div>
 
                 <div class="col-3">
-                    <h4>Keep in touch</h4>
+                    <h4>Get in touch</h4>
                     <!-- Form de contact -->
+                    <?= do_shortcode('[contact-form-7 id="14" title="Contact form 1"]') ?>
                 </div>
 
             </div>

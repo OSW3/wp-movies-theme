@@ -2,12 +2,16 @@
 /**
  * Template Name: Template Movies
  */
-
+$args = [
+    "post_type" => "movie"
+];
+$query = new WP_Query($args);
 ?>
 <?php get_header() ?>
 <div class="container">
-    <h1>xxxxxx</h1>
+    <h1><?= get_the_title() ?></h1>
 
+    <?php if($query->have_posts()): ?>
     <table class="table table-hover">
         <thead>
             <tr>
@@ -17,14 +21,21 @@
             </tr>
         </thead>
         <tbody>
-        
+
+            <?php while($query->have_posts()): $query->the_post(); ?>
             <tr>
-                <td>xxx</td>
-                <td>xxx</td>
-                <td>xxx</td>
+                <td><?= get_the_title() ?></td>
+                <td><?= get_the_content() ?></td>
+                <td><?= get_the_permalink() ?></td>
             </tr>
+            <?php endwhile; ?>
 
         </tbody>
     </table>
+    <?php else: ?>
+        <div class="alert alert-warning">
+            Il n'y a aucun post !
+        </div>
+    <?php endif; ?>
 </div>
 <?php get_footer() ?>

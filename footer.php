@@ -26,11 +26,11 @@
 
                     <ul class="list-unstyled">
                     <?php foreach(get_menu('main-menu') as $item): ?>
-                        <li><a href="<?= $item['url'] ?>"><?= $item['title'] ?></a></li>
+                        <li><a class="text-decoration-none text-dark" href="<?= $item['url'] ?>"><?= $item['title'] ?></a></li>
                     <?php endforeach; ?>
                     
                     <?php foreach(get_menu('social-menu') as $item): ?>
-                        <li><a href="<?= $item['url'] ?>"><?= $item['title'] ?></a></li>
+                        <li><a class="text-decoration-none text-dark" href="<?= $item['url'] ?>"><?= $item['title'] ?></a></li>
                     <?php endforeach; ?>
                     </ul>
                 </div>

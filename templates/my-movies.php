@@ -26,7 +26,7 @@ $query = new WP_Query($args);
             <tr>
                 <td><?= get_the_title() ?></td>
                 <td><?= get_the_content() ?></td>
-                <td><?= get_the_permalink() ?></td>
+                <td><a href="<?= get_the_permalink() ?>">Voir</a></td>
             </tr>
             <?php endwhile; ?>
 

@@ -30,12 +30,13 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
+
+                        <?php foreach(get_menu('main-menu') as $item): ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">xxxxx</a>
+                            <a class="nav-link" href="<?= $item['url'] ?>"><?= $item['title'] ?></a>
                         </li>
+                        <?php endforeach; ?>
+
                     </ul>
                 </div>
 

@@ -23,6 +23,16 @@
                 <div class="col-3">
                     <h4>Navigation</h4>
                     <!-- Menu-footer -->
+
+                    <ul class="list-unstyled">
+                    <?php foreach(get_menu('main-menu') as $item): ?>
+                        <li><a href="<?= $item['url'] ?>"><?= $item['title'] ?></a></li>
+                    <?php endforeach; ?>
+                    
+                    <?php foreach(get_menu('social-menu') as $item): ?>
+                        <li><a href="<?= $item['url'] ?>"><?= $item['title'] ?></a></li>
+                    <?php endforeach; ?>
+                    </ul>
                 </div>
 
                 <div class="col-3">
